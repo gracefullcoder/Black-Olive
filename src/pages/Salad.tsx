@@ -1,12 +1,12 @@
-import React from 'react'
-import Products from '../components/Products'
+import ListProducts from '../components/ListProducts'
+import { salads } from '../utility/Productdetails'
 
 function Salad() {
   return (
-    <>
-      <Products/>
-      <Products />
-    </>
+    <section className='relative px-8 pb-16 '>
+      <h1 className='font-bold text-3xl tracking-wide text-center my-8'>SALADS</h1>
+      <ListProducts products={salads}/>
+    </section>
   )
 }
 

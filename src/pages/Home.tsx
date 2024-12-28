@@ -1,12 +1,16 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsappButton";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div className="pt-20">
+        <Outlet />
+      </div>
+      <WhatsAppButton />
       <Footer />
     </div>
   );

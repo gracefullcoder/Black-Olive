@@ -1,22 +1,16 @@
-import React from 'react'
-import SaladCard from './SaladCard'
-import marvella from "../assets/paneermarvella.jpg"
 import Button from './Button'
-import { Link } from 'react-router-dom'
+import ListProducts from './ListProducts'
+import { allProducts } from '../utility/Productdetails'
+import { useState } from 'react'
 
 
 function Products() {
+    const [isClick, setisClick] = useState(false);
     return (
         <section className='relative py-4 px-8 flex flex-col gap-12 items-center '>
             <h1 className='font-semibold text-2xl tracking-wide'>PRODUCTS</h1>
-            <div className='flex w-full justify-between'>
-                <SaladCard img={marvella} title={'PANNER MARVELLA'} speciality={'BLACK OLIVE'} price={247} finalPrice={123} />
-                <SaladCard img={marvella} title={'PANNER MARVELLA'} speciality={'BLACK OLIVE'} price={247} finalPrice={123} />
-                <SaladCard img={marvella} title={'PANNER MARVELLA'} speciality={'BLACK OLIVE'} price={247} finalPrice={123} />
-                <SaladCard img={marvella} title={'PANNER MARVELLA'} speciality={'BLACK OLIVE'} price={247} finalPrice={123} />
-            </div>
-
-            <Link to={"/salads"}> <Button /></Link>
+            <ListProducts products={isClick ? allProducts : allProducts.slice(0, 4)} />
+            <span onClick={() => setisClick((prev) => !prev)} className={isClick ? 'hidden' : ''}><Button /></span>
         </section>
     )
 }

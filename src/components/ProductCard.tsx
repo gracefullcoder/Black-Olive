@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 type saladDetails = {
   img: any,
@@ -6,11 +6,15 @@ type saladDetails = {
   speciality: string,
   price: number,
   finalPrice: number
-}
+  details:string
+} 
 
-function SaladCard({ img, title, speciality, price, finalPrice }: saladDetails) {
+function ProductCard({ img, title, speciality, price, finalPrice,details }: saladDetails) {
+  const productDetails = { img, title, speciality, price, finalPrice,details }; 
+
   return (
-    <div className='border  border-black w-fit p-4 rounded-3xl pb-8'>
+    <Link to={"/product"} state={productDetails}>
+       <div className='border  border-black w-fit p-4 rounded-3xl pb-8'>
       <img src={img} alt="" className='h-[24rem] w-[19rem] mb-4' />
       <p className='text-semibold'>{title}</p>
       <p className='text-slate-400'>{speciality}</p>
@@ -19,7 +23,8 @@ function SaladCard({ img, title, speciality, price, finalPrice }: saladDetails) 
         <p className='text-lg'>Rs. {finalPrice}.00</p>
       </div>
     </div>
+    </Link>
   )
 }
 
-export default SaladCard
+export default ProductCard
