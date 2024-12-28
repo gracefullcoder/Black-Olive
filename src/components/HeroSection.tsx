@@ -1,4 +1,3 @@
-import React from 'react'
 import saladImg from "../assets/salad.jpg"
 import HeroCard from './HeroCard'
 

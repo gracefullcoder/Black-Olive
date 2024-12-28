@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { IonIcon } from '@ionic/react';
-import { menuOutline, closeOutline, searchOutline, bagHandleOutline, personOutline } from 'ionicons/icons';
+import { menuOutline, closeOutline} from 'ionicons/icons';
+// import { searchOutline, bagHandleOutline, personOutline } from 'ionicons/icons';
+
 import { Link } from 'react-router-dom';
 import Logo from "../assets/logo.png"
 
