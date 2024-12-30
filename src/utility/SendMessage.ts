@@ -1,4 +1,4 @@
-const phoneNumber = "+918780770435"; 
+const phoneNumber = "+917211166616"; 
 
 export const Message = (message:any) => {
     const finalMsg = encodeURIComponent(message);

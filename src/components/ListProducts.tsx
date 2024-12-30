@@ -6,7 +6,7 @@ function ListProducts({products} : {products:product[]}) {
         <div className='flex flex-wrap w-full justify-center gap-4'>
             {
                 products.map((product,idx) => (
-                    <ProductCard key={idx} img={product.img} title={product.title} speciality={product.speciality} price={product.price} finalPrice={product.finalPrice} details={product.details}/>
+                    <ProductCard key={idx} id={product.id} img={product.img} title={product.title} speciality={product.speciality} price={product.price} finalPrice={product.finalPrice} details={product.details}/>
                 ))
             }
         </div>

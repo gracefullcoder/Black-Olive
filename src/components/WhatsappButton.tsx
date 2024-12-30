@@ -12,7 +12,7 @@ function WhatsAppButton() {
             target="_blank"
             rel="noopener noreferrer"
         >
-            <img src={whatsappLogo} alt="whatsapp logo" className="fixed z-10 bottom-20 right-20 h-16 w-16" />
+            <img src={whatsappLogo} alt="whatsapp logo" className="fixed z-10 bottom-12 right-12 h-16 w-16 max-md:h-12 w-12 right-8 bottom-8" />
         </a>
     );
 }
