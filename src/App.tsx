@@ -5,48 +5,53 @@ import {
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Salad from "./pages/Salad";
-import Policy from "./pages/Policy";
 import HomePage from "./pages/HomePage";
 import ProductDetails from "./pages/ProductDetails";
 import MemberShip from "./pages/MemberShip";
 import AboutUs from "./components/AboutUs";
 import PageNotFound from "./components/PageNotFound";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsAndConditions";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    children:[
+    children: [
       {
-        index:true,
-        element:<HomePage />
+        index: true,
+        element: <HomePage />
       },
       {
-        path:"salads",
+        path: "salads",
         element: <Salad />
       },
       {
-        path:"membership",
+        path: "membership",
         element: <MemberShip />
       },
       {
-        path:"contact",
-        element: <Contact />
-      },
-      {
-        path:"about",
-        element:<AboutUs />
-      },
-      {
-        path:"policy",
-        element: <Policy />
-      },
-      {
-        path:"product",
+        path: "product",
         element: <ProductDetails />
       },
       {
-        path:"*",
+        path: "contact",
+        element: <Contact />
+      },
+      {
+        path: "about",
+        element: <AboutUs />
+      },
+      {
+        path: "policy",
+        element: <PrivacyPolicy />
+      },
+      {
+        path: "terms",
+        element: <TermsAndConditions />
+      },
+      {
+        path: "*",
         element: <PageNotFound />
       }
     ]
