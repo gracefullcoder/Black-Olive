@@ -9,8 +9,8 @@ function Footer() {
 
       <ul className="flex text-sm text-slate-400 font-medium gap-4 justify-center max-sm:flex-col items-center">
         <li><Link to={"about"}>ABOUT US</Link></li>
-        <li><Link to="policy">SHIPPING POLICY</Link></li>
-        <li><Link to="policy">TERMS & CONDITION</Link></li>
+        <li><Link to="shipping">SHIPPING POLICY</Link></li>
+        <li><Link to="terms">TERMS & CONDITION</Link></li>
         <li><Link to="policy">PRIVACY POLICY</Link></li>
         <li><Link to={"contact"}>CONTACT US</Link></li>
       </ul>
