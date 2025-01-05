@@ -1,11 +1,11 @@
-// import marvella from "../assets/paneer.png"
-// import platinum from "../assets/power.png"
-// import diamond from "../assets/rich.png"
-// import mushroom from "../assets/mushroom.png"
-// import corn from "../assets/corn.png"
-// import mexican from "../assets/mexican.png"
-// import weekly from "../assets/weekly.jpg"
-// import monthly from "../assets/monthly.jpg"
+import marvella from "../assets/paneer.png"
+import platinum from "../assets/power.png"
+import diamond from "../assets/rich.png"
+import mushroom from "../assets/mushroom.png"
+import corn from "../assets/corn.png"
+import mexican from "../assets/mexican.png"
+import weekly from "../assets/weekly.jpg"
+import monthly from "../assets/monthly.jpg"
 
 
 export type product = {
@@ -21,7 +21,7 @@ export type product = {
 export const allProducts: product[] = [
     {
         id: 1,
-        img: "https://ik.imagekit.io/vaibhav11/Black%20Olive/paneer.png?updatedAt=1735428955087",
+        img: marvella,
         title: "PANNER MARVELLA",
         speciality: "BLACK OLIVE",
         price: 189,
@@ -30,7 +30,7 @@ export const allProducts: product[] = [
     },
     {
         id: 2,
-        img: "https://ik.imagekit.io/vaibhav11/Black%20Olive/power.png?updatedAt=1735428954667",
+        img: platinum,
         title: "POWER PLATINUM",
         speciality: "BLACK OLIVE",
         price: 159,
@@ -39,7 +39,7 @@ export const allProducts: product[] = [
     },
     {
         id: 3,
-        img: "https://ik.imagekit.io/vaibhav11/Black%20Olive/rich.png?updatedAt=1735428949065",
+        img: diamond,
         title: "RICH DIAMOND",
         speciality: "BLACK OLIVE",
         price: 139,
@@ -48,7 +48,7 @@ export const allProducts: product[] = [
     },
     {
         id: 4,
-        img: "https://ik.imagekit.io/vaibhav11/Black%20Olive/mushroom.png?updatedAt=1735428954699",
+        img: mushroom,
         title: "MYSTIC MUSHROOM",
         speciality: "BLACK OLIVE",
         price: 189,
@@ -57,7 +57,7 @@ export const allProducts: product[] = [
     },
     {
         id: 5,
-        img: "https://ik.imagekit.io/vaibhav11/Black%20Olive/corn.png?updatedAt=1735428928947",
+        img: corn,
         title: "GOLDEN CORN",
         speciality: "BLACK OLIVE",
         price: 99,
@@ -66,7 +66,7 @@ export const allProducts: product[] = [
     },
     {
         id: 6,
-        img: "https://ik.imagekit.io/vaibhav11/Black%20Olive/mexican.png?updatedAt=1735428942589",
+        img: mexican,
         title: "MEXICAN MAGIC",
         speciality: "BLACK OLIVE",
         price: 159,
@@ -75,7 +75,7 @@ export const allProducts: product[] = [
     },
     {
         id: 7,
-        img: "https://ik.imagekit.io/vaibhav11/Black%20Olive/weekly.jpg?updatedAt=1735428889502",
+        img: weekly,
         title: "WEEKLY MEMBERSHIP!",
         speciality: "BLACK OLIVE",
         price: 694,
@@ -84,7 +84,7 @@ export const allProducts: product[] = [
     },
     {
         id: 8,
-        img: "https://ik.imagekit.io/vaibhav11/Black%20Olive/monthly.jpg?updatedAt=1735428889483",
+        img: monthly,
         title: "MONTHLY MEMBERSHIP!",
         speciality: "BLACK OLIVE",
         price: 2776,
