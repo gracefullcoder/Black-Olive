@@ -6,6 +6,7 @@ import { searchOutline, bagHandleOutline, personOutline } from 'ionicons/icons';
 import { NavLink } from 'react-router-dom';
 import Logo from "../assets/logo.png"
 import { useCartContext } from '../context/CartContext';
+import MessageBar from './MessageBar';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,7 +80,7 @@ function Navbar() {
           </nav>
         </div>
       )}
-
+      <MessageBar message={'This website is still under construction'} />
     </header>
   );
 }

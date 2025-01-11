@@ -12,6 +12,7 @@ import AboutUs from "./components/AboutUs";
 import PageNotFound from "./components/PageNotFound";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions";
+import Shipping from "./components/Shipping";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "policy",
         element: <PrivacyPolicy />
+      },
+      {
+        path :"shipping",
+        element: <Shipping />
       },
       {
         path: "terms",

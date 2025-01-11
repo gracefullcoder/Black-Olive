@@ -214,7 +214,7 @@ export const allProductsIK: product[] = [
         title: "GOLDEN CORN",
         speciality: "BLACK OLIVE",
         price: 99,
-        finalPrice: 69,
+        finalPrice: 79,
         details: "American sweet corn with sprinkled freshly ground black pepper and a squeeze of zesty lemon"
     },
     {

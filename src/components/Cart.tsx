@@ -23,10 +23,10 @@ const Cart = () => {
 
   const checkout = () => {
     const message = items
-      .map((details) => {
-        return `I want to buy ${details.title} having quantity of ${details.quantity}, expected to get delivered by ${details.time}.`;
+      .map((details,idx) => {
+        return `PRODUCT ${idx + 1}: ${details.title}\n -Quantity: ${details.quantity}\n-Time : ${details.time}\n`;
       })
-      .join(" ");
+      .join("\n");
 
     Message(message);
   }

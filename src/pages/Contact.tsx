@@ -11,7 +11,7 @@ function ContactUs() {
             <label className="block text-gray-700 font-medium">Your Name</label>
             <input
               type="text"
-              placeholder="Bhargav Gohil"
+              placeholder="Full Name"
               className="w-full px-4 py-2 mt-2 border rounded-lg focus:ring focus:ring-blue-300"
             />
           </div>
